@@ -10,22 +10,22 @@ namespace TechJobPortal.Models
         Contract
         }
 
-    public class JobListing
-    {
+   public class JobListing
+{
+    public int Id { get; set; }
 
-        public int Id { get; set; }
+    [Required]
+    public string? Title { get; set; }
 
-        [Required]
-        public string Title { get; set; }
+    [Required]
+    public string? CompanyName { get; set; }
 
-        [Required]
-        public string CompanyName { get; set; }
+    public string? Location { get; set; }
 
-        public string Location { get; set; }
+    [Required]
+    public JobType JobType { get; set; }
 
-        [Required]
-        public JobType JobType { get; set; }
+    public DateTime PostedDate { get; set; } = DateTime.UtcNow;
+}
 
-        public DateTime PostedDate { get; set; } = DateTime.UtcNow;
-    }
 }

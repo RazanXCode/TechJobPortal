@@ -1,3 +1,4 @@
+
 @model TechJobPortal.Models.JobListing
 
 @{
@@ -7,33 +8,16 @@
 <h2>@Model.Title</h2>
 <p><strong>Company:</strong> @Model.CompanyName</p>
 <p><strong>Location:</strong> @Model.Location</p>
-<p><strong>Job Type:</strong> @Model.JobType</p>
-<p><strong>Posted on:</strong> @Model.PostedDate.ToString("MMM dd, yyyy")</p>
-
-<a asp-controller="JobListing" asp-action="Index" class="btn btn-primary">Back to Job Listings</a>
-@{
-    Layout = "_Layout";
-} 
-
-@* @model TechJobPortal.Models.JobListing
-
-@{
-    ViewData["Title"] = "Job Details";
-}
-
-<h2>@Model.Title</h2>
-<p><strong>Company:</strong> @Model.CompanyName</p>
-<p><strong>Location:</strong> @Model.Location</p>
 <p><strong>Job Type:</strong>
-    <!-- JobType Dropdown -->
-    <select class="form-select" id="JobTypeDropdown" name="JobType">
-        @foreach (var jobType in Enum.GetValues(typeof(TechJobPortal.Models.JobType)).Cast<TechJobPortal.Models.JobType>())
-        {
-            <option value="@jobType" @(jobType == Model.JobType ? "selected" : "")>@jobType</option>
-        }
-    </select>
+    @* JobType Dropdown *@
+  <select class="form-select" id="JobTypeDropdown" name="JobType">
+    @foreach (var jobType in Enum.GetValues(typeof(TechJobPortal.Models.JobType)).Cast<TechJobPortal.Models.JobType>())
+    {
+        <option value="@jobType" selected="@(jobType == Model.JobType ? "selected" : null)"> @jobType </option>
+    }
+</select>
+
 </p>
 <p><strong>Posted on:</strong> @Model.PostedDate.ToString("MMM dd, yyyy")</p>
 
-<a asp-controller="JobListing" asp-action="Index" class="btn btn-primary">Back to Job Listings</a> *@
-
+<a asp-controller="JobListing" asp-action="Index" class="btn btn-primary">Back to Job Listings</a>
