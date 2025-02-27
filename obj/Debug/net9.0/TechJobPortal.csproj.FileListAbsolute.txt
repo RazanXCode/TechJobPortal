@@ -95,3 +95,4 @@ C:\Users\razan\TechJobPortal\obj\Debug\net9.0\refint\TechJobPortal.dll
 C:\Users\razan\TechJobPortal\obj\Debug\net9.0\TechJobPortal.pdb
 C:\Users\razan\TechJobPortal\obj\Debug\net9.0\TechJobPortal.genruntimeconfig.cache
 C:\Users\razan\TechJobPortal\obj\Debug\net9.0\ref\TechJobPortal.dll
+C:\Users\razan\TechJobPortal\obj\Debug\net9.0\TechJobPortal.sourcelink.json

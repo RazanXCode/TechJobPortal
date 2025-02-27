@@ -1,4 +1,4 @@
-@* @model TechJobPortal.Models.JobListing
+@model TechJobPortal.Models.JobListing
 
 @{
     ViewData["Title"] = "Job Details";
@@ -13,9 +13,9 @@
 <a asp-controller="JobListing" asp-action="Index" class="btn btn-primary">Back to Job Listings</a>
 @{
     Layout = "_Layout";
-}  *@
+} 
 
-@model TechJobPortal.Models.JobListing
+@* @model TechJobPortal.Models.JobListing
 
 @{
     ViewData["Title"] = "Job Details";
@@ -35,5 +35,5 @@
 </p>
 <p><strong>Posted on:</strong> @Model.PostedDate.ToString("MMM dd, yyyy")</p>
 
-<a asp-controller="JobListing" asp-action="Index" class="btn btn-primary">Back to Job Listings</a>
+<a asp-controller="JobListing" asp-action="Index" class="btn btn-primary">Back to Job Listings</a> *@
 
